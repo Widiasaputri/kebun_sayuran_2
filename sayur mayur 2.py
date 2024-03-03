@@ -117,7 +117,7 @@ class Kebun:
             print("3. Ubah Sayuran")
             print("4. Hapus Sayuran")
             print("5. Keluar")
-            pilihan = input("Pilih aksi: ")
+            pilihan = input("Pilih menu: ")
 
             if pilihan == '1':
                 nama = input("Masukkan nama sayuran: ")
@@ -133,7 +133,7 @@ class Kebun:
                     posisi = 'akhir'
                 elif posisi_pilihan == '3':
                     posisi = 'antara'
-                    posisi_nomor = int(input("Masukkan nomor sayuran setelah posisi penambahan: "))
+                    posisi_nomor = int(input("Masukkan nomor sayuran setelah sayuran ditambahkan: "))
                 self.create_sayuran(nama, teknik, jumlah, hari, harga, posisi, posisi_nomor)
                 
             elif pilihan == '2':
@@ -152,7 +152,7 @@ class Kebun:
                 self.update_sayuran(nomor_sayuran, nama, teknik, jumlah, hari, harga)
                 
             elif pilihan == '4':
-                print("Hapus sayuran di: 1. Awal 2. Akhir 3. Nomor spesifik")
+                print("Hapus sayuran di: 1. Awal 2. Akhir 3. Nomor khusus")
                 posisi = input("Pilih posisi: ")
                 if posisi == '1':
                     posisi = 'awal'
